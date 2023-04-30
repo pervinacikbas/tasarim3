@@ -1,0 +1,151 @@
+header {
+    background: linear-gradient(270deg, #fff 50%, hsla(0, 0%, 0%, 1) 50%);
+}
+
+* {
+    margin: 0;
+    font-family: 'Big Shoulders Display', sans sans-serif;
+}
+
+.p {
+    font-family: "Lucida Console", "Courier New", monospace
+}
+
+.header_first_image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.header_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    padding-inline: .05rem;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+
+.header_container_heading {
+    font-size: 70px;
+    color: black;
+    mix-blend-mode: exclusion;
+}
+
+
+.header_container_paragraph {
+    font-size: 20px;
+    max-width: 18.75rem;
+}
+
+.header_button {
+
+    display: flex;
+    max-width: 12.40rem;
+    background-color: black;
+}
+
+.header_button_link {
+    text-decoration: 0;
+    padding: 1.5rem 2.1875rem;
+    letter-spacing: .2rem;
+    color: white;
+}
+
+.header_button_arrow {
+
+    padding: 1rem;
+    background-color: rgb(213, 150, 108);
+}
+
+article {
+    padding-inline: 1.25rem;
+    display: contents;
+
+}
+
+.article_grid {
+    display: grid;
+    gap: 1.875rem;
+    margin-block: 11.25rem;
+    max-width: 100%;
+    grid-template-columns: 1fr 10rem 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        't1 t2 t2'
+        'l1 l1 r1'
+        'l1 l1 r2';
+    transition: all ease .5s;
+}
+
+.grid_up_left {
+    grid-area: t1;
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem;
+    gap: 2rem;
+    background-color: #ececec;
+}
+
+.grid_up_right {
+    display: flex;
+    grid-area: t2;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.grid_down_left {
+    display: flex;
+    grid-area: l1;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.grid_down_right_up {
+    display: flex;
+    grid-area: r1;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.grid_down_right_down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: r2;
+    padding: 3.125rem;
+    background-color: #ececec;
+    gap: 2rem;
+}
+
+.grid_down_right_down_heading {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #2d2d2d;
+    max-width: 22.5rem;
+}
+
+footer {
+    background-color: black;
+    padding-block: 3.5rem;
+}
+
+.footer_container {
+    display: flex;
+    padding-inline: 1.25rem;
+    justify-content: space-between;
+}
+
+.footer_container_text {
+    color: #fff;
+
+}
+.footer_container_socialmedia{
+    gap: 1.5rem;
+}
